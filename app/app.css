@@ -1,29 +1,17 @@
 /* app css stylesheet */
 
 .menu {
+  background: black;
+  color: #fff;
+  font-weight: bold;
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
+  padding:   0.5em 0;
+} 
 .menu > li {
   display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
+} 
 
 .img-circle {
   border-radius: 50%;
@@ -31,12 +19,7 @@
 float-left {
   float: left;
 }
-
-.menu {
-  background: black;
-  color: #fff;
-  font-weight: bold;
-}
+ 
 .blocks .btn-primary 
 {
     margin: 24px 12px;  
@@ -47,12 +30,12 @@ float-left {
 .btn-back{
   color: #fff;}
 
-  .media-body {
-    margin-left: 10px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-  }
+.media-body {
+  margin-left: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
 
-  .media {
-    margin:0 20px;
-  }
+.media, .content {
+  margin:0 20px;
+}
