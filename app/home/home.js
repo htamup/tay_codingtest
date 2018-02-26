@@ -23,13 +23,14 @@ angular.module('myApp.home', ['ngRoute'])
     })();
 
     function GetAllUser() {
-      vm.dataLoading = true;
-      UserService.GetAll().then(function (users) {
-        if (users) {
-          $scope.topFive = users.slice(0, 5);
-          console.log(vm.topFive)
-        }
-      });
+      $scope.topFive =  ["GrahamCampbell","fabpot","weierophinney","rkh","josh"];
+      // vm.dataLoading = true;
+      // UserService.GetAll().then(function (users) {
+      //   if (users) {
+      //     $scope.topFive = users.slice(0, 5);
+      //     console.log(vm.topFive)
+      //   }
+      // });
     }
 
   }]);
