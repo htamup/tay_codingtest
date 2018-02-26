@@ -12,6 +12,10 @@
 .menu a {
   padding :0;
 }
+
+.menu a:hover {
+  color: #fff;
+}
 .menu > li {
   display: inline;
 } 
