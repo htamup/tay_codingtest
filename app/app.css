@@ -23,3 +23,36 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+
+.img-circle {
+  border-radius: 50%;
+} 
+float-left {
+  float: left;
+}
+
+.menu {
+  background: black;
+  color: #fff;
+  font-weight: bold;
+}
+.blocks .btn-primary 
+{
+    margin: 24px 12px;  
+}
+
+.blocks {border-spacing:5px;}
+
+.btn-back{
+  color: #fff;}
+
+  .media-body {
+    margin-left: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+  .media {
+    margin:0 20px;
+  }

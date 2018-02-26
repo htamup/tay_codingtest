@@ -27,7 +27,7 @@ angular.module('myApp.home', ['ngRoute'])
       UserService.GetAll().then(function (users) {
         if (users) {
           $scope.topFive = users.slice(0, 5);
-          console.log($scope.topFive)
+          console.log(vm.topFive)
         }
       });
   }
