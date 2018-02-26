@@ -13,21 +13,21 @@
       service.GetByUsername = GetByUsername;
 
       return service;
-
-      var baseUserUrl = 'https://api.github.com/users'
+ 
       
       function GetAll() {
           return $http.get('https://api.github.com/users').then(handleSuccess, handleError('Error getting all users'));
       }
  
       function GetByUsername(username) {
-          return $http.get(baseUserUrl + username).then(handleSuccess, handleError('Error getting user by username'));
+          return $http.get('https://api.github.com/users/' + username).then(handleSuccess, handleError('Error getting user by username'));
       }
  
       // private functions
 
       function handleSuccess(res) { 
           return res.data;
+          console.log(res.data)
       }
 
       function handleError(error) {

@@ -11,11 +11,11 @@ angular.module('myApp.home', ['ngRoute'])
 
 
 
-  .controller('HomeCtrl', ['UserService' , '$timeout', function (UserService, $timeout) {
+  .controller('HomeCtrl', ['UserService' , '$timeout' ,  '$scope', function (UserService, $timeout, $scope) {
 
     var vm = this;
 
-    vm.topFive = [];
+    $scope.topFive = [];
     vm.GetAllUser = GetAllUser;
 
     (function initController() {
@@ -26,8 +26,8 @@ angular.module('myApp.home', ['ngRoute'])
       vm.dataLoading = true;
       UserService.GetAll().then(function (users) {
         if (users) {
-          vm.topFive = users.slice(0, 5);
-          console.log(vm.topFive)
+          $scope.topFive = users.slice(0, 5);
+          console.log($scope.topFive)
         }
       });
   }

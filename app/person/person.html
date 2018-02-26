@@ -1,5 +1,17 @@
-<p>This is the partial for view 2.</p>
+<!-- <p>This is the partial for view 2.</p>
 <p>
   Showing of 'interpolate' filter:
   {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+</p> -->
+ 
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="{{user.avatar_url}}"  alt="..." width="20px" height="20px">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{user.login}}</h4>
+    <p class="card-text">{{user.location}}</p>
+  </div>
+</div>

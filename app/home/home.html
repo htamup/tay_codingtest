@@ -1,4 +1,5 @@
   <p>This is the partial for view 1.</p>
-  <div ng-repeat="user in vm.topFive">
-    <button>{{user.login}}</button>
+  
+  <div class="form-inline form-group">
+    <a class="btn btn-primary" href="#!/person/{{user.login}}"  ng-repeat="user in topFive">{{user.login}}</a>
 </div>
