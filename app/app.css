@@ -9,6 +9,9 @@
   margin-bottom: 2em;
   padding:   0.5em 0;
 } 
+.menu a {
+  padding :0;
+}
 .menu > li {
   display: inline;
 } 
@@ -23,8 +26,7 @@ float-left {
 .blocks .btn-primary 
 {
     margin: 24px 5px;  
-}
-
+} 
 .blocks {border-spacing:5px;}
 
 .btn-back{
