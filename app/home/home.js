@@ -11,7 +11,7 @@ angular.module('myApp.home', ['ngRoute'])
 
 
 
-  .controller('HomeCtrl', ['UserService' , '$timeout' ,  '$scope', function (UserService, $timeout, $scope) {
+  .controller('HomeCtrl', ['UserService', '$timeout', '$scope', function (UserService, $timeout, $scope) {
 
     var vm = this;
 
@@ -30,6 +30,6 @@ angular.module('myApp.home', ['ngRoute'])
           console.log(vm.topFive)
         }
       });
-  }
+    }
 
   }]);
